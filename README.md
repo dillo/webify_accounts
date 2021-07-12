@@ -6,11 +6,11 @@
 
 - Docker commands
 
-  - docker build -t <change_me>-accounts .
+  - docker build -t webify_accounts .
   - docker compose run web rails db:setup
   - docker compose run web rails db:migrate
-  - docker scan <change_me>-accounts
-  - docker run -p 3000:3000 <change_me>-accounts
+  - docker scan webify_accounts
+  - docker run -p 3000:3000 webify_accounts
   - docker rm container_name -fv
   - docker system prune
   - docker compose ps
