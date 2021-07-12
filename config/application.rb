@@ -41,16 +41,16 @@ module WebifyAccounts
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
-    config.active_job.queue_name_prefix = "change_me_#{Rails.env}"
+    config.active_job.queue_name_prefix = "webify_accounts_#{Rails.env}"
     config.active_job.queue_adapter = :sidekiq
     # This also configures session_options for use below
-    config.session_store :cookie_store, key: '_change_me_session'
+    config.session_store :cookie_store, key: '_webify_accounts_session'
     # Required for all session management (regardless of session_store)
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use config.session_store, config.session_options
 
     $stdout.sync = true
     config.rails_semantic_logger.add_file_appender = false
-    config.semantic_logger.application = 'change_me'
+    config.semantic_logger.application = 'webify_accounts'
   end
 end
