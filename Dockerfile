@@ -1,6 +1,6 @@
 FROM ruby:3.0.1-alpine3.13 as builder
 
-LABEL project="_change_me"
+LABEL project="webify_accounts"
 
 ENV BUNDLER_VERSION=2.2.15
 ENV DOCKER_APP_ROOT=/app PORT=3000
