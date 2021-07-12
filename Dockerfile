@@ -3,7 +3,7 @@ FROM ruby:3.0.1-alpine3.13 as builder
 LABEL project="webify_accounts"
 
 ENV BUNDLER_VERSION=2.2.15
-ENV DOCKER_APP_ROOT=/app PORT=3000
+ENV DOCKER_APP_ROOT=/app PORT=7001
 
 RUN apk add --no-cache \
   build-base \
