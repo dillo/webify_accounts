@@ -21,7 +21,7 @@ Rails.application.configure do
   if Rails.root.join('tmp/caching-dev.txt').exist?
     config.cache_store = :redis_cache_store, {
       expires_in: 1.hour,
-      namespace: '_change_me_accounts',
+      namespace: 'webify_accounts',
       redis: Redis.new(host: '127.0.0.1', port: 6379, db: 0)
     }
     config.public_file_server.headers = {
