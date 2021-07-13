@@ -53,13 +53,13 @@ Rails.application.configure do
   # Use a different cache store in production.
   config.cache_store = :redis_cache_store, {
     expires_in: 1.hour,
-    namespace: '_change_me_accounts',
+    namespace: 'webify_accounts',
     redis: Redis.new(host: '127.0.0.1', port: 6379, db: 0)
   }
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
-  config.active_job.queue_adapter     = :resque
-  config.active_job.queue_name_prefix = '_change_me_production'
+  # config.active_job.queue_adapter     = :resque
+  # config.active_job.queue_name_prefix = '_change_me_production'
 
   config.action_mailer.perform_caching = false
 
