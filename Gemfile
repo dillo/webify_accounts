@@ -7,6 +7,7 @@ ruby '3.0.1'
 
 gem 'bcrypt', '~> 3.1.16'
 gem 'bootsnap', '>= 1.7.5', require: false
+gem 'config'
 gem 'delivery_boy'
 gem 'devise'
 gem 'oj', '~> 3.11', '>= 3.11.7'
