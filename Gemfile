@@ -10,6 +10,9 @@ gem 'bootsnap', '>= 1.7.5', require: false
 gem 'config'
 gem 'delivery_boy'
 gem 'devise'
+gem 'flipper'
+gem 'flipper-active_record'
+gem 'flipper-ui'
 gem 'oj', '~> 3.11', '>= 3.11.7'
 gem 'pg', '~> 1.2.3'
 gem 'postgresql', '~> 1.0.0'
@@ -32,6 +35,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails', '~> 5.0.1'
   gem 'rubocop-rails', require: false
+  gem 'simplecov', require: false
 end
 
 group :development do
