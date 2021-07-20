@@ -186,7 +186,8 @@ GEM
     pg (1.2.3)
     postgresql (1.0.0)
       pg
-    prometheus-client (2.1.0)
+    prometheus_exporter (0.8.0)
+      webrick
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -350,6 +351,7 @@ GEM
     unicode-display_width (2.0.0)
     warden (1.2.9)
       rack (>= 2.0.9)
+    webrick (1.7.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -373,7 +375,7 @@ DEPENDENCIES
   oj (~> 3.11, >= 3.11.7)
   pg (~> 1.2.3)
   postgresql (~> 1.0.0)
-  prometheus-client (~> 2.1.0)
+  prometheus_exporter
   pry-byebug
   pry-rails
   puma (~> 5.3.2)
