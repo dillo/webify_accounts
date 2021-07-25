@@ -10,7 +10,7 @@ Sidekiq.configure_server do |config|
     require 'prometheus_exporter/instrumentation'
 
     chain.add PrometheusExporter::Instrumentation::Sidekiq
- end
+  end
 end
 
 Sidekiq.configure_client do |config|

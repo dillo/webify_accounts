@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Sidekiq sentry job
 class SentryJob < ApplicationJob
   queue_as :sentry_event
 
