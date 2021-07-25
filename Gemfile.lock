@@ -125,6 +125,8 @@ GEM
       dry-initializer (~> 3.0)
       dry-schema (~> 1.5, >= 1.5.2)
     erubi (1.10.0)
+    ethon (0.14.0)
+      ffi (>= 1.15.0)
     faraday (1.5.0)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
@@ -142,6 +144,8 @@ GEM
     faraday-net_http (1.0.1)
     faraday-net_http_persistent (1.1.0)
     faraday-patron (1.0.0)
+    faraday_middleware (1.0.0)
+      faraday (~> 1.0)
     ffi (1.15.3)
     flipper (0.22.0)
     flipper-active_record (0.22.0)
@@ -201,6 +205,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
+    rack-attack (6.5.0)
+      rack (>= 1.0, < 3)
     rack-cors (1.1.1)
       rack (>= 2.0.0)
     rack-protection (2.1.0)
@@ -346,6 +352,8 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     thor (1.1.0)
+    typhoeus (1.4.0)
+      ethon (>= 0.9.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.0.0)
@@ -368,6 +376,8 @@ DEPENDENCIES
   config
   delivery_boy
   devise
+  faraday
+  faraday_middleware
   flipper
   flipper-active_record
   flipper-ui
@@ -379,12 +389,14 @@ DEPENDENCIES
   pry-byebug
   pry-rails
   puma (~> 5.3.2)
+  rack-attack
   rack-cors
   rails (~> 6.1.4)
   rails_semantic_logger
   redis-rails (~> 5.0.2)
   rspec-rails (~> 5.0.1)
   rswag
+  rswag-ui
   rubocop-rails
   ruby-kafka
   sentry-rails
@@ -393,6 +405,7 @@ DEPENDENCIES
   sidekiq (~> 6.2.1)
   simplecov
   spring
+  typhoeus
   tzinfo-data
 
 RUBY VERSION
