@@ -16,11 +16,32 @@
 PreCommit:
   BundleCheck:
     enabled: true
+  BundleAudit:
+    enabled: true
+  Fasterer:
+    enabled: true
   ForbiddenBranches:
     enabled: true
     branch_patterns:
       - "master"
       - "main"
+  LicenseFinder:
+    enabled: false
+  RailsBestPractices:
+    enabled: true
+    command: ["bundle", "exec", "rails_best_practices", "."]
+  Reek:
+    enabled: true
+    command: ["bundle", "exec", "reek"]
+    exclude:
+      - "log"
+      - "swagger"
+      - "tmp"
+      - "vendor"
+      - "storage"
+      - "public"
+      - "coverage"
+      - "bin"
   RuboCop:
     enabled: true
     on_warn: fail
