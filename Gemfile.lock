@@ -67,8 +67,10 @@ GEM
     bcrypt (3.1.16)
     bootsnap (1.7.5)
       msgpack (~> 1.0)
+    brakeman (5.1.1)
     builder (3.2.4)
     byebug (11.1.3)
+    childprocess (4.1.0)
     coderay (1.1.3)
     concurrent-ruby (1.1.9)
     config (3.1.0)
@@ -160,6 +162,7 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
+    iniparse (1.5.0)
     json-schema (2.8.1)
       addressable (>= 2.4)
     king_konf (1.0.0)
@@ -184,6 +187,10 @@ GEM
       racc (~> 1.4)
     oj (3.11.7)
     orm_adapter (0.5.0)
+    overcommit (0.58.0)
+      childprocess (>= 0.6.3, < 5)
+      iniparse (~> 1.4)
+      rexml (~> 3.2)
     parallel (1.20.1)
     parser (3.0.1.1)
       ast (~> 2.4.1)
@@ -315,6 +322,9 @@ GEM
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.7.0, < 2.0)
+    rubocop-rspec (2.4.0)
+      rubocop (~> 1.0)
+      rubocop-ast (>= 1.1.0)
     ruby-kafka (1.3.0)
       digest-crc
     ruby-progressbar (1.11.0)
@@ -373,6 +383,7 @@ DEPENDENCIES
   amazing_print
   bcrypt (~> 3.1.16)
   bootsnap (>= 1.7.5)
+  brakeman
   config
   delivery_boy
   devise
@@ -383,6 +394,7 @@ DEPENDENCIES
   flipper-ui
   listen (~> 3.5.1)
   oj (~> 3.11, >= 3.11.7)
+  overcommit
   pg (~> 1.2.3)
   postgresql (~> 1.0.0)
   prometheus_exporter
@@ -398,6 +410,7 @@ DEPENDENCIES
   rswag
   rswag-ui
   rubocop-rails
+  rubocop-rspec
   ruby-kafka
   sentry-rails
   sentry-ruby
