@@ -37,9 +37,13 @@ gem 'typhoeus'
 group :development, :test do
   gem 'amazing_print'
   gem 'brakeman'
+  gem 'bundler-audit'
+  gem 'license_finder'
   gem 'overcommit'
   gem 'pry-byebug', platforms: %i[mri mingw x64_mingw]
   gem 'pry-rails'
+  gem 'rails_best_practices'
+  gem 'reek'
   gem 'rspec-rails', '~> 5.0.1'
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec'
