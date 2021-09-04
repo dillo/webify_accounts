@@ -183,7 +183,7 @@ GEM
       toml (= 0.2.0)
       with_env (= 1.1.0)
       xml-simple
-    listen (3.5.1)
+    listen (3.7.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.12.0)
@@ -432,7 +432,7 @@ DEPENDENCIES
   flipper-active_record
   flipper-ui
   license_finder
-  listen (~> 3.5.1)
+  listen
   oj
   overcommit
   pg
@@ -448,7 +448,7 @@ DEPENDENCIES
   rails_semantic_logger
   redis-rails
   reek
-  rspec-rails (~> 5.0.1)
+  rspec-rails
   rswag
   rswag-ui
   rubocop-rails

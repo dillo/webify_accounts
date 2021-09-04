@@ -44,14 +44,14 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rails_best_practices'
   gem 'reek'
-  gem 'rspec-rails', '~> 5.0.1'
+  gem 'rspec-rails'
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec'
   gem 'simplecov', require: false
 end
 
 group :development do
-  gem 'listen', '~> 3.5.1'
+  gem 'listen'
   gem 'spring'
 end
 
