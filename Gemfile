@@ -3,10 +3,10 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.1'
+ruby '3.0.2'
 
-gem 'bcrypt', '~> 3.1.16'
-gem 'bootsnap', '>= 1.7.5', require: false
+gem 'bcrypt'
+gem 'bootsnap', require: false
 gem 'config'
 gem 'delivery_boy'
 gem 'devise'
@@ -15,23 +15,23 @@ gem 'faraday_middleware'
 gem 'flipper'
 gem 'flipper-active_record'
 gem 'flipper-ui'
-gem 'oj', '~> 3.11', '>= 3.11.7'
-gem 'pg', '~> 1.2.3'
-gem 'postgresql', '~> 1.0.0'
+gem 'oj'
+gem 'pg'
+gem 'postgresql'
 gem 'prometheus_exporter'
-gem 'puma', '~> 5.3.2'
+gem 'puma'
 gem 'rack-attack'
 gem 'rack-cors'
 gem 'rails', '~> 6.1.4'
 gem 'rails_semantic_logger'
-gem 'redis-rails', '~> 5.0.2'
+gem 'redis-rails'
 gem 'rswag'
 gem 'rswag-ui'
 gem 'ruby-kafka'
 gem 'sentry-rails'
 gem 'sentry-ruby'
 gem 'sentry-sidekiq'
-gem 'sidekiq', '~> 6.2.1'
+gem 'sidekiq'
 gem 'typhoeus'
 
 group :development, :test do
